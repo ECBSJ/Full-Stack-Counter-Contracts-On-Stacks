@@ -1,0 +1,22 @@
+{
+  "name": "Scoping for increments",
+  "uuid": "3f111529-2a4a-440c-89dd-e16cd6cc5a8c",
+  "chain": "stacks",
+  "version": 1,
+  "networks": {
+    "devnet": {
+      "if_this": {
+        "scope": "contract_call",
+        "method": "increment",
+        "contract_identifier": "ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.counter"
+      },
+      "then_that": {
+        "http_post": {
+          "url": "https://early-things-write.loca.lt/api/insert-increment",
+          "authorization_header": ""
+        }
+      },
+      "start_block": 0
+    }
+  }
+}
