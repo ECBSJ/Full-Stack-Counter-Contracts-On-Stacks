@@ -6,6 +6,8 @@ This repo is only pertaining to the Clarity smart contracts. For the front-end a
 
 This repo is part of a full end-to-end [tutorial](https://youtu.be/Z9JQU_sOQLQ) published on Hiro's Youtube channel.
 
+The deployed counter contract on mainnet can be found [here](https://explorer.hiro.so/txid/SP3TJMRQ13QR6V5HGT6AKEK7PP699F4148JZTB9G3.counter?chain=mainnet).
+
 ## Steps
 
 - Build Counter contract using Clarinet
