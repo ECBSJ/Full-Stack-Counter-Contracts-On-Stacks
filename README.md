@@ -2,7 +2,7 @@
 
 This is a full-stack counter app built with Next.js on the front-end and with Clarity smart contracts deployed on Stacks mainnet.
 
-This repo is only pertaining to the Clarity smart contracts. For the front-end application go here.
+This repo is only pertaining to the Clarity smart contracts. For the front-end application go [here](https://github.com/ECBSJ/Full-Stack-Counter-App-On-Stacks).
 
 This repo is part of a full end-to-end [tutorial](https://youtu.be/Z9JQU_sOQLQ) published on Hiro's Youtube channel.
 
