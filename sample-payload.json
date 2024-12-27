@@ -1,0 +1,76 @@
+{
+  "apply": [
+    {
+      "block_identifier": {
+        "index": 51,
+        "hash": "0x5e3ac27397c8fa84346599bfdb17fab61f91b823af7c1971aa1f692e813a0c44"
+      },
+      "parent_block_identifier": {
+        "index": 50,
+        "hash": "0x716c40cc25b7a3c805e7353f45daf74211d7ffd5486514ca01c643e7d6920d10"
+      },
+      "timestamp": 1734708071,
+      "transactions": [
+        {
+          "transaction_identifier": {
+            "hash": "0x27e1ed4721ccfd8b0ab7db3fc05ad78487ed4db43e12f294e1c17e5ac014289b"
+          },
+          "operations": [],
+          "metadata": {
+            "success": true,
+            "raw_tx": "0x808000000004006d78de7b0625dfbfc16c3a8a5735f6dc3dc3f2ce00000000000000040000000000000bb8000017fb49d9079c83122b1b6ce696699a420f5cb5eeabe577bf6f7076a9632f88c52b4a7166833b4deb3b1f627156a747947a98ce40ea428a7aa2ec8f13c9798cb1030200000000021a6d78de7b0625dfbfc16c3a8a5735f6dc3dc3f2ce07636f756e74657209696e6372656d656e7400000000",
+            "result": "(ok true)",
+            "sender": "ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM",
+            "nonce": 4,
+            "fee": 3000,
+            "kind": {
+              "type": "ContractCall",
+              "data": {
+                "contract_identifier": "ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.counter",
+                "method": "increment",
+                "args": []
+              }
+            },
+            "receipt": {
+              "mutated_contracts_radius": [],
+              "mutated_assets_radius": [],
+              "contract_calls_stack": [],
+              "events": []
+            },
+            "description": "invoked: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.counter::increment()",
+            "sponsor": null,
+            "execution_cost": {
+              "write_length": 60,
+              "write_count": 4,
+              "read_length": 4742,
+              "read_count": 13,
+              "runtime": 21004
+            },
+            "position": { "index": 0 }
+          }
+        }
+      ],
+      "metadata": {
+        "bitcoin_anchor_block_identifier": {
+          "index": 152,
+          "hash": "0x259078ef4f89f57eff86c46a427c9a9668e6795c9cad7f74c2d92c2ae8bc216a"
+        },
+        "pox_cycle_index": 2,
+        "pox_cycle_position": 11,
+        "pox_cycle_length": 20,
+        "confirm_microblock_identifier": null,
+        "stacks_block_hash": "0x185132b5f7aad2d67a1d9b07590c30f824d421829e4e36741abaa6377800dd4e"
+      }
+    }
+  ],
+  "rollback": [],
+  "chainhook": {
+    "uuid": "3f111529-2a4a-440c-89dd-e16cd6cc5a8c",
+    "predicate": {
+      "scope": "contract_call",
+      "contract_identifier": "ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.counter",
+      "method": "increment"
+    },
+    "is_streaming_blocks": true
+  }
+}

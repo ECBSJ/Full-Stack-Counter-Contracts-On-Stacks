@@ -10,15 +10,15 @@ plan:
       transactions:
         - contract-publish:
             contract-name: count-token
-            expected-sender: SP355B7SVQQCJMZJN73V05Z97MF3YFZH274Q3AZG6
-            cost: 30300
+            expected-sender: SP3TJMRQ13QR6V5HGT6AKEK7PP699F4148JZTB9G3
+            cost: 30420
             path: contracts/count-token.clar
             anchor-block-only: true
             clarity-version: 3
         - contract-publish:
             contract-name: counter
-            expected-sender: SP355B7SVQQCJMZJN73V05Z97MF3YFZH274Q3AZG6
-            cost: 12080
+            expected-sender: SP3TJMRQ13QR6V5HGT6AKEK7PP699F4148JZTB9G3
+            cost: 14140
             path: contracts/counter.clar
             anchor-block-only: true
             clarity-version: 3

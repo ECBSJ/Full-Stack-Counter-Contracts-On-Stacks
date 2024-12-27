@@ -66,7 +66,7 @@
 (define-public (mint)
   (begin
     (asserts! (is-eq contract-caller .counter) ERR_OWNER_ONLY)
-    (ft-mint? count-token u1 tx-sender)
+    (ft-mint? count-token u1000000 tx-sender)
   )
 )
 
@@ -74,7 +74,7 @@
   (begin
     (asserts! (is-eq contract-caller .counter) ERR_OWNER_ONLY)
     (if (> (unwrap-panic (get-balance tx-sender)) u0)
-      (ft-burn? count-token u1 tx-sender)
+      (ft-burn? count-token u1000000 tx-sender)
       (stx-burn? u1000000 tx-sender)
     )
   )

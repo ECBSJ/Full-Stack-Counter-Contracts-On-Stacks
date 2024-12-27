@@ -27,7 +27,9 @@
   (begin
     (record-user-count)
     (var-set global-count (+ (var-get global-count) 1))
-    (contract-call? .count-token mint)
+    (try! (contract-call? .count-token mint))
+    (print { action: "increment", sender: tx-sender, time: stacks-block-height })
+    (ok true)
   )
 )
 
@@ -37,6 +39,8 @@
   (begin
     (record-user-count)
     (var-set global-count (- (var-get global-count) 1))
-    (contract-call? .count-token burn)
+    (try! (contract-call? .count-token burn))
+    (print { action: "decrement", sender: tx-sender, time: stacks-block-height })
+    (ok true)
   )
 )

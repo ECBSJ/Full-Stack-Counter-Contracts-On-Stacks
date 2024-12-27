@@ -41,9 +41,15 @@ describe("functionality of counter", () => {
 
     let countTokenBalance = simnet.getAssetsMap().get(".count-token.count-token")
 
+    let expectedTuple = {
+      action: Cl.stringAscii("increment"),
+      sender: Cl.standardPrincipal("ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5"),
+      time: Cl.uint(simnet.blockHeight)
+    }
+
     expect(incrementResult).toBeOk(Cl.bool(true))
     expect(globalCount).toBeInt(1)
     expect(userCount).toBeSome(Cl.uint(1))
-    expect(countTokenBalance?.get(address1)).toBe(BigInt(1))
+    expect(countTokenBalance?.get(address1)).toBe(BigInt(1000000))
   })
 })

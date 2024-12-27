@@ -12,7 +12,7 @@
       },
       "then_that": {
         "http_post": {
-          "url": "https://early-things-write.loca.lt/api/insert-increment",
+          "url": "https://rare-cities-refuse.loca.lt/api/insert-increment",
           "authorization_header": ""
         }
       },
